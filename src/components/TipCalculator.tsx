@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Check, ChevronDown } from 'lucide-react';
+import { Check, ChevronDown, Utensils, Hotel, Car } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import {
@@ -19,10 +19,10 @@ import { ServiceType, useTipCalculator } from '@/hooks/use-tip-calculator';
 import { tippingRates } from '@/data/tipping-data';
 import { cn } from '@/lib/utils';
 
-const serviceTypes: { value: ServiceType; label: string }[] = [
-  { value: 'restaurant', label: 'Restaurant' },
-  { value: 'porter', label: 'Porter' },
-  { value: 'taxi', label: 'Taxi' },
+const serviceTypes: { value: ServiceType; label: string; icon: React.ComponentType }[] = [
+  { value: 'restaurant', label: 'Restaurant', icon: Utensils },
+  { value: 'porter', label: 'Porter', icon: Hotel },
+  { value: 'taxi', label: 'Taxi', icon: Car },
 ];
 
 export function TipCalculator() {
@@ -119,16 +119,20 @@ export function TipCalculator() {
           <div className="space-y-2">
             <label className="text-sm font-medium">Service Type</label>
             <div className="grid grid-cols-3 gap-2">
-              {serviceTypes.map((type) => (
-                <Button
-                  key={type.value}
-                  variant={serviceType === type.value ? "default" : "outline"}
-                  onClick={() => setServiceType(type.value)}
-                  className="w-full"
-                >
-                  {type.label}
-                </Button>
-              ))}
+              {serviceTypes.map((type) => {
+                const Icon = type.icon;
+                return (
+                  <Button
+                    key={type.value}
+                    variant={serviceType === type.value ? "default" : "outline"}
+                    onClick={() => setServiceType(type.value)}
+                    className="w-full"
+                  >
+                    <Icon className="block sm:hidden h-4 w-4" />
+                    <span className="hidden sm:block">{type.label}</span>
+                  </Button>
+                );
+              })}
             </div>
           </div>
 
