@@ -1,39 +1,51 @@
+import countriesData from './countries-that-tip-2024.json';
+
 export interface TippingRate {
   country: string;
   rates: {
     restaurant: number;
-    porter: number;  // This maps to your "Hotel" category
-    taxi: number;    // This maps to your "Driver" category
+    porter: number;  // Maps to Hotel category
+    taxi: number;    // Maps to Driver category
   };
   currency: string;
   currencySymbol: string;
 }
 
-// This is just an example. Replace this array with your actual data of 146 countries
-export const tippingRates: TippingRate[] = [
-  {
-    country: "United States",
-    rates: {
-      restaurant: 0.20,
-      porter: 0.15,
-      taxi: 0.15
-    },
-    currency: "USD",
-    currencySymbol: "$"
-  },
-  // ... You would add all your countries here in the same format
-];
+const parsePercentage = (value: string | number | null): number => {
+  if (value === null || value === "No tip" || value === "Included") return 0;
+  if (typeof value === "number") return value / 100;
+  if (value === "Round up") return 0.1; // Default 10% for "Round up"
+  
+  // Handle range values (e.g., "10-15" or "1-2")
+  if (value.includes("-")) {
+    const [min, max] = value.split("-").map(Number);
+    return (max || min) / 100; // Use max if available, otherwise min
+  }
+  
+  return Number(value) / 100;
+};
 
-// Helper function to import your CSV/JSON data
+export const tippingRates: TippingRate[] = countriesData.map(country => ({
+  country: country.country,
+  rates: {
+    restaurant: parsePercentage(country.CountriesThatTipRestaurantTip),
+    porter: parsePercentage(country.CountriesThatTipHotelTip),
+    taxi: parsePercentage(country.CountriesThatTipDriverTip)
+  },
+  currency: "USD", // Default to USD since currency info isn't in the source data
+  currencySymbol: "$" // Default to $ since symbol info isn't in the source data
+}));
+
+// Helper function to import additional data if needed
 export const importTippingData = (data: any[]): TippingRate[] => {
   return data.map(item => ({
     country: item.country,
     rates: {
-      restaurant: parseFloat(item.restaurantTip) / 100, // Convert percentage to decimal
+      restaurant: parseFloat(item.restaurantTip) / 100,
       porter: parseFloat(item.hotelTip) / 100,
       taxi: parseFloat(item.driverTip) / 100
     },
-    currency: item.currency || "USD", // Default to USD if not specified
-    currencySymbol: item.currencySymbol || "$" // Default to $ if not specified
+    currency: item.currency || "USD",
+    currencySymbol: item.currencySymbol || "$"
   }));
 };
