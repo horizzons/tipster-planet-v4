@@ -25,16 +25,18 @@ const parsePercentage = (value: string | number | null): number => {
   return Number(value) / 100;
 };
 
-export const tippingRates: TippingRate[] = countriesData.map(country => ({
-  country: country.country,
-  rates: {
-    restaurant: parsePercentage(country.CountriesThatTipRestaurantTip),
-    porter: parsePercentage(country.CountriesThatTipHotelTip),
-    taxi: parsePercentage(country.CountriesThatTipDriverTip)
-  },
-  currency: "USD", // Default to USD since currency info isn't in the source data
-  currencySymbol: "$" // Default to $ since symbol info isn't in the source data
-}));
+export const tippingRates: TippingRate[] = countriesData
+  .sort((a, b) => a.country.localeCompare(b.country))
+  .map(country => ({
+    country: country.country,
+    rates: {
+      restaurant: parsePercentage(country.CountriesThatTipRestaurantTip),
+      porter: parsePercentage(country.CountriesThatTipHotelTip),
+      taxi: parsePercentage(country.CountriesThatTipDriverTip)
+    },
+    currency: "USD", // Default to USD since currency info isn't in the source data
+    currencySymbol: "$" // Default to $ since symbol info isn't in the source data
+  }));
 
 // Helper function to import additional data if needed
 export const importTippingData = (data: any[]): TippingRate[] => {
