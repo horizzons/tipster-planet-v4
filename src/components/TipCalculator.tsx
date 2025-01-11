@@ -1,29 +1,8 @@
-import { useState } from 'react';
-import { Check, ChevronDown, Utensils, Hotel, Car } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import {
-  Command,
-  CommandEmpty,
-  CommandGroup,
-  CommandInput,
-  CommandItem,
-  CommandList,
-} from '@/components/ui/command';
-import {
-  Popover,
-  PopoverContent,
-  PopoverTrigger,
-} from '@/components/ui/popover';
-import { ServiceType, useTipCalculator } from '@/hooks/use-tip-calculator';
-import { tippingRates } from '@/data/tipping-data';
-import { cn } from '@/lib/utils';
-
-const serviceTypes: { value: ServiceType; label: string; icon: React.ComponentType }[] = [
-  { value: 'restaurant', label: 'Restaurant', icon: Utensils },
-  { value: 'porter', label: 'Porter', icon: Hotel },
-  { value: 'taxi', label: 'Taxi', icon: Car },
-];
+import { useTipCalculator } from '@/hooks/use-tip-calculator';
+import { BillInput } from './calculator/BillInput';
+import { CountrySelector } from './calculator/CountrySelector';
+import { ServiceTypeSelector } from './calculator/ServiceTypeSelector';
+import { TipDisplay } from './calculator/TipDisplay';
 
 export function TipCalculator() {
   const {
@@ -38,8 +17,6 @@ export function TipCalculator() {
     tipPercentage,
   } = useTipCalculator();
 
-  const [open, setOpen] = useState(false);
-
   return (
     <div className="w-full max-w-md mx-auto p-6 mt-0 sm:mt-6">
       <div className="glass-panel rounded-2xl p-6 space-y-6 animate-in">
@@ -51,118 +28,28 @@ export function TipCalculator() {
         </div>
 
         <div className="space-y-4">
-          <div className="space-y-2">
-            <label className="text-sm font-medium" htmlFor="bill-amount">
-              Bill Amount
-            </label>
-            <Input
-              id="bill-amount"
-              type="number"
-              placeholder="Enter bill amount"
-              value={billAmount}
-              onChange={(e) => setBillAmount(e.target.value)}
-              className="w-full"
-            />
-          </div>
-
-          <div className="space-y-2">
-            <label className="text-sm font-medium">Country</label>
-            <Popover open={open} onOpenChange={setOpen}>
-              <PopoverTrigger asChild>
-                <Button
-                  variant="outline"
-                  role="combobox"
-                  aria-expanded={open}
-                  className="w-full justify-between"
-                >
-                  {selectedCountry?.country ?? "Select country..."}
-                  <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
-                </Button>
-              </PopoverTrigger>
-              <PopoverContent 
-                className="w-full p-0" 
-                side="bottom" 
-                align="start"
-                sideOffset={4}
-              >
-                <Command>
-                  <CommandInput placeholder="Search country..." />
-                  <CommandList>
-                    <CommandEmpty>No country found.</CommandEmpty>
-                    <CommandGroup>
-                      {tippingRates.map((country) => (
-                        <CommandItem
-                          key={country.country}
-                          onSelect={() => {
-                            setSelectedCountry(country);
-                            setOpen(false);
-                          }}
-                        >
-                          <Check
-                            className={cn(
-                              "mr-2 h-4 w-4",
-                              selectedCountry?.country === country.country
-                                ? "opacity-100"
-                                : "opacity-0"
-                            )}
-                          />
-                          {country.country}
-                        </CommandItem>
-                      ))}
-                    </CommandGroup>
-                  </CommandList>
-                </Command>
-              </PopoverContent>
-            </Popover>
-          </div>
-
-          <div className="space-y-2">
-            <label className="text-sm font-medium">Service Type</label>
-            <div className="grid grid-cols-3 gap-2">
-              {serviceTypes.map((type) => {
-                const Icon = type.icon;
-                return (
-                  <Button
-                    key={type.value}
-                    variant={serviceType === type.value ? "default" : "outline"}
-                    onClick={() => setServiceType(type.value)}
-                    className="w-full"
-                  >
-                    <div className="block sm:hidden">
-                      <Icon />
-                    </div>
-                    <span className="hidden sm:block">{type.label}</span>
-                  </Button>
-                );
-              })}
-            </div>
-          </div>
+          <BillInput 
+            billAmount={billAmount} 
+            setBillAmount={setBillAmount} 
+          />
+          
+          <CountrySelector 
+            selectedCountry={selectedCountry} 
+            setSelectedCountry={setSelectedCountry} 
+          />
+          
+          <ServiceTypeSelector 
+            serviceType={serviceType} 
+            setServiceType={setServiceType} 
+          />
 
           {selectedCountry && billAmount && (
-            <div className="space-y-4 pt-4 animate-in">
-              <div className="space-y-2">
-                <div className="flex justify-between text-sm">
-                  <span>Tip Percentage</span>
-                  <span className="font-medium">
-                    {(tipPercentage * 100).toFixed(1)}%
-                  </span>
-                </div>
-                <div className="flex justify-between text-sm">
-                  <span>Tip Amount</span>
-                  <span className="font-medium">
-                    {selectedCountry.currencySymbol}
-                    {tipAmount.toFixed(2)}
-                  </span>
-                </div>
-                <div className="flex justify-between text-base font-medium">
-                  <span>Total Amount</span>
-                  <span>
-                    {selectedCountry.currencySymbol}
-                    {totalAmount.toFixed(2)}
-                  </span>
-                </div>
-              </div>
-            </div>
+            <TipDisplay
+              tipPercentage={tipPercentage}
+              tipAmount={tipAmount}
+              totalAmount={totalAmount}
+              currencySymbol={selectedCountry.currencySymbol}
+            />
           )}
         </div>
       </div>
