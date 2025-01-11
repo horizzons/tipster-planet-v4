@@ -128,7 +128,9 @@ export function TipCalculator() {
                     onClick={() => setServiceType(type.value)}
                     className="w-full"
                   >
-                    <Icon className="block sm:hidden h-4 w-4" />
+                    <div className="block sm:hidden">
+                      <Icon className="h-4 w-4" />
+                    </div>
                     <span className="hidden sm:block">{type.label}</span>
                   </Button>
                 );
