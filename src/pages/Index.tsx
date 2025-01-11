@@ -1,6 +1,6 @@
 import { TipCalculator } from "@/components/TipCalculator";
 import { Button } from "@/components/ui/button";
-import { ArrowDown } from "lucide-react";
+import { ArrowUp } from "lucide-react";
 
 const Index = () => {
   const scrollToCalculator = () => {
@@ -10,8 +10,15 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
+      {/* Calculator Section at the top */}
+      <section id="calculator" className="py-16 px-4">
+        <div className="relative w-full max-w-md mx-auto">
+          <TipCalculator />
+        </div>
+      </section>
+
       {/* Hero Section */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-4 py-16 text-center">
+      <section className="min-h-[50vh] flex flex-col items-center justify-center px-4 py-16 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
             CalcTips – Your Global Tipping Companion
@@ -19,13 +26,6 @@ const Index = () => {
           <p className="text-xl text-gray-600 mt-4">
             Calculate the Perfect Tip, Anywhere in the World
           </p>
-          <Button 
-            onClick={scrollToCalculator}
-            className="mt-8 text-lg"
-          >
-            Calculate Now
-            <ArrowDown className="ml-2 h-4 w-4" />
-          </Button>
         </div>
       </section>
 
@@ -89,12 +89,16 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Calculator Section */}
-      <section id="calculator" className="py-16 px-4">
-        <div className="relative w-full max-w-md mx-auto">
-          <TipCalculator />
-        </div>
-      </section>
+      {/* Calculate Now Button at the bottom */}
+      <div className="flex justify-center pb-16">
+        <Button 
+          onClick={scrollToCalculator}
+          className="text-lg"
+        >
+          Calculate Now
+          <ArrowUp className="ml-2 h-4 w-4" />
+        </Button>
+      </div>
 
       {/* SEO Optimization */}
       <div className="hidden">
