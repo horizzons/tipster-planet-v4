@@ -41,7 +41,7 @@ export function TipCalculator() {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="w-full max-w-md mx-auto p-6">
+    <div className="w-full max-w-md mx-auto p-6 mt-0 sm:mt-6">
       <div className="glass-panel rounded-2xl p-6 space-y-6 animate-in">
         <div className="space-y-2">
           <h2 className="text-2xl font-semibold tracking-tight">Tip Calculator</h2>
@@ -79,7 +79,12 @@ export function TipCalculator() {
                   <ChevronDown className="ml-2 h-4 w-4 shrink-0 opacity-50" />
                 </Button>
               </PopoverTrigger>
-              <PopoverContent className="w-full p-0">
+              <PopoverContent 
+                className="w-full p-0" 
+                side="bottom" 
+                align="start"
+                sideOffset={4}
+              >
                 <Command>
                   <CommandInput placeholder="Search country..." />
                   <CommandList>
