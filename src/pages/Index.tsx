@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
       {/* Calculator Section at the top */}
-      <section id="calculator" className="py-8 px-4">
+      <section id="calculator" className="py-4 px-4">
         <div className="relative w-full max-w-md mx-auto">
           <TipCalculator />
         </div>
