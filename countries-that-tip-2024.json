@@ -1,0 +1,848 @@
+[
+  {
+    "country": "India",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "7-10"
+  },
+  {
+    "country": "United States",
+    "CountriesThatTipDriverTip": 15,
+    "CountriesThatTipHotelTip": "2-5",
+    "CountriesThatTipRestaurantTip": 20
+  },
+  {
+    "country": "Pakistan",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Brazil",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Bangladesh",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "0.2-0.3",
+    "CountriesThatTipRestaurantTip": "2-10"
+  },
+  {
+    "country": "Russia",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-3",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Ethiopia",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": 0.5,
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Mexico",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-5",
+    "CountriesThatTipRestaurantTip": 15
+  },
+  {
+    "country": "Egypt",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "0.25-0.50",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Philippines",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Vietnam",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Iran",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "2-3",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Turkey",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Germany",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "3-5",
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Thailand",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "0.5-1",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "United Kingdom",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "2-3",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Tanzania",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "France",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "South Africa",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Italy",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-5",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Kenya",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-5",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Myanmar",
+    "CountriesThatTipDriverTip": "5-10",
+    "CountriesThatTipHotelTip": "1-3",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Colombia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Uganda",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Spain",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "2-5",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Algeria",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": "0.5-1",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Argentina",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "0.5-1",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Canada",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "2-5",
+    "CountriesThatTipRestaurantTip": "15-20"
+  },
+  {
+    "country": "Poland",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 2,
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Morocco",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "10"
+  },
+  {
+    "country": "Angola",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Ukraine",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Uzbekistan",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Malaysia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Ghana",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "0.1-0.2",
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Peru",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Saudi Arabia",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Madagascar",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "0.5-1",
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Ivory Coast",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Nepal",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Cameroon",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Venezuela",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Taiwan",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": "No tip"
+  },
+  {
+    "country": "Sri Lanka",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "0.5-1",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Zambia",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Kazakhstan",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Chile",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Romania",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Senegal",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 2,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Guatemala",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Netherlands",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Ecuador",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Cambodia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "No tip"
+  },
+  {
+    "country": "Zimbabwe",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": "1-5",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Benin",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Bolivia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "0.5-1",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Tunisia",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Belgium",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Jordan",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "3-7",
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Dominican Republic",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "10-20"
+  },
+  {
+    "country": "United Arab Emirates",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Cuba",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": "1-5",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Honduras",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "2-3",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Czech Republic",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 2,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Sweden",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Portugal",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Azerbaijan",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Greece",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Hungary",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "0.5-1.5",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Israel",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1.5-3",
+    "CountriesThatTipRestaurantTip": 12
+  },
+  {
+    "country": "Austria",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "5-15"
+  },
+  {
+    "country": "Belarus",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Switzerland",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Turkmenistan",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Paraguay",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "2-5",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Nicaragua",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Bulgaria",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "0.5-1",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Serbia",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-5",
+    "CountriesThatTipRestaurantTip": "10-20"
+  },
+  {
+    "country": "El Salvador",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Republic of the Congo",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Lebanon",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Finland",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": "2-5",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Norway",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "10-20"
+  },
+  {
+    "country": "Slovakia",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Palestine",
+    "CountriesThatTipDriverTip": "15-20",
+    "CountriesThatTipHotelTip": 4,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Oman",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": 2.5,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Ireland",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Mauritania",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "12-15"
+  },
+  {
+    "country": "Costa Rica",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": 2,
+    "CountriesThatTipRestaurantTip": "No tip"
+  },
+  {
+    "country": "Kuwait",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "0.9-1.8",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Panama",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Croatia",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "2-2.5",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Georgia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "0.5-1.5",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Eritrea",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Mongolia",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": "0.3-0.6",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Uruguay",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Bosnia and Herzegovina",
+    "CountriesThatTipDriverTip": "8-20",
+    "CountriesThatTipHotelTip": "1-3",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Qatar",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": "2-3",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Namibia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "0.5-1",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Armenia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": "10-20"
+  },
+  {
+    "country": "Lithuania",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "5-15"
+  },
+  {
+    "country": "Jamaica",
+    "CountriesThatTipDriverTip": "10-15",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "10-18"
+  },
+  {
+    "country": "Albania",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Gambia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 7.5
+  },
+  {
+    "country": "Gabon",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Botswana",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 0.5,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Slovenia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Equatorial Guinea",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Latvia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "North Macedonia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 0.5,
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Bahrain",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "2-5",
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Estonia",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "2-3",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Cyprus",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-3",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Mauritius",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": 2,
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Eswatini",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Guyana",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Bhutan",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Luxembourg",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1.5-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Montenegro",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 2,
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Malta",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-3",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Maldives",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Cape Verde",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Brunei",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Belize",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "2-5",
+    "CountriesThatTipRestaurantTip": 15
+  },
+  {
+    "country": "Bahamas",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Iceland",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No Tip",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Barbados",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Saint Lucia",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Seychelles",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": 1,
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Grenada",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Saint Vincent and the Grenadines",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Antigua and Barbuda",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": 2,
+    "CountriesThatTipRestaurantTip": "10-15"
+  },
+  {
+    "country": "Andorra",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Dominica",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": 10
+  },
+  {
+    "country": "Saint Kitts and Nevis",
+    "CountriesThatTipDriverTip": 10,
+    "CountriesThatTipHotelTip": "2-3",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Liechtenstein",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "No tip",
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "Monaco",
+    "CountriesThatTipDriverTip": "No tip",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "Included"
+  },
+  {
+    "country": "Marshall Islands",
+    "CountriesThatTipDriverTip": null,
+    "CountriesThatTipHotelTip": null,
+    "CountriesThatTipRestaurantTip": "5-10"
+  },
+  {
+    "country": "San Marino",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-5",
+    "CountriesThatTipRestaurantTip": "5-15"
+  },
+  {
+    "country": "Tuvalu",
+    "CountriesThatTipDriverTip": "Round up",
+    "CountriesThatTipHotelTip": "1-2",
+    "CountriesThatTipRestaurantTip": "5-10"
+  }
+]
