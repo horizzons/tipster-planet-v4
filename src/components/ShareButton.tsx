@@ -66,7 +66,7 @@ export const ShareButton = () => {
         <Button
           variant="ghost"
           size="icon"
-          className="text-gray-400 hover:text-gray-600 hover:bg-transparent focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
+          className="text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full hover:bg-opacity-100 focus:ring-0 focus-visible:ring-0 focus-visible:ring-offset-0"
         >
           <Share2 className="h-5 w-5" />
           <span className="sr-only">Share</span>
