@@ -8,6 +8,7 @@ import {
   CommandGroup,
   CommandInput,
   CommandItem,
+  CommandList,
 } from '@/components/ui/command';
 import {
   Popover,
@@ -81,28 +82,30 @@ export function TipCalculator() {
               <PopoverContent className="w-full p-0">
                 <Command>
                   <CommandInput placeholder="Search country..." />
-                  <CommandEmpty>No country found.</CommandEmpty>
-                  <CommandGroup>
-                    {tippingRates.map((country) => (
-                      <CommandItem
-                        key={country.country}
-                        onSelect={() => {
-                          setSelectedCountry(country);
-                          setOpen(false);
-                        }}
-                      >
-                        <Check
-                          className={cn(
-                            "mr-2 h-4 w-4",
-                            selectedCountry?.country === country.country
-                              ? "opacity-100"
-                              : "opacity-0"
-                          )}
-                        />
-                        {country.country}
-                      </CommandItem>
-                    ))}
-                  </CommandGroup>
+                  <CommandList>
+                    <CommandEmpty>No country found.</CommandEmpty>
+                    <CommandGroup>
+                      {tippingRates.map((country) => (
+                        <CommandItem
+                          key={country.country}
+                          onSelect={() => {
+                            setSelectedCountry(country);
+                            setOpen(false);
+                          }}
+                        >
+                          <Check
+                            className={cn(
+                              "mr-2 h-4 w-4",
+                              selectedCountry?.country === country.country
+                                ? "opacity-100"
+                                : "opacity-0"
+                            )}
+                          />
+                          {country.country}
+                        </CommandItem>
+                      ))}
+                    </CommandGroup>
+                  </CommandList>
                 </Command>
               </PopoverContent>
             </Popover>
