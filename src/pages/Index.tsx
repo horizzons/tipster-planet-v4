@@ -11,7 +11,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-blue-50">
       {/* Calculator Section at the top */}
-      <section id="calculator" className="py-16 px-4">
+      <section id="calculator" className="py-8 px-4">
         <div className="relative w-full max-w-md mx-auto">
           <TipCalculator />
         </div>
@@ -36,19 +36,19 @@ const Index = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                title: "Enter Bill Amount",
+                title: "1 - Enter Bill Amount",
                 description: "Input the total amount of your bill"
               },
               {
-                title: "Select Country",
+                title: "2 - Select Country",
                 description: "Choose your current location or travel destination"
               },
               {
-                title: "Choose Service",
+                title: "3 - Choose Service",
                 description: "Specify whether you're dining out, staying at a hotel, or using a driver service"
               },
               {
-                title: "Get Suggestion",
+                title: "4 - Get Suggestion",
                 description: "Instantly receive a tip amount tailored to local customs"
               }
             ].map((feature, index) => (
