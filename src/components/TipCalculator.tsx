@@ -129,7 +129,7 @@ export function TipCalculator() {
                     className="w-full"
                   >
                     <div className="block sm:hidden">
-                      <Icon className="h-4 w-4" />
+                      <Icon />
                     </div>
                     <span className="hidden sm:block">{type.label}</span>
                   </Button>
