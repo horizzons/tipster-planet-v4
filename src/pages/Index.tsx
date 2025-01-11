@@ -18,7 +18,7 @@ const Index = () => {
       </section>
 
       {/* Hero Section */}
-      <section className="min-h-[50vh] flex flex-col items-center justify-center px-4 py-16 text-center">
+      <section className="min-h-[50vh] flex flex-col items-center justify-center px-4 py-8 text-center">
         <div className="max-w-3xl mx-auto space-y-6">
           <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">
             CalcTips – Your Global Tipping Companion
